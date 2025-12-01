@@ -1,0 +1,1788 @@
+@charset "utf-8";
+/* CSS Document */
+img{
+    max-width: 100%;height: auto;
+}
+
+/*共通文字*/
+h1{
+    font-family: "Micro 5","Not serif";
+    font-size: 40px;
+    color: #FF2EB9;
+}
+h2{
+  font-family: "Micro 5","Not serif";
+    font-size: 25px;
+    color: #221814;
+}
+h3{
+  font-family: "Micro 5","Not serif";
+    font-size: 25px;
+    color: #FF2EB9;
+
+}
+
+
+a:link{text-decoration: none;color:#e2b9cc;}
+a:visited {text-decoration: none;color:#e2b9cc;}
+/*======下層共通ページ======*/
+.wapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: o auto;
+}
+/* -------------------------------------------------- */
+ /*TOP*/
+ /* -------------------------------------------------- */
+ /*===TOPの動き====*/
+.block {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.block-one {
+  background: #f6f1e6;
+  z-index: 100;
+}
+
+.block-one header {
+  width: 100%;
+  position: relative;
+}
+.block-two {
+  background: #fff;
+  z-index: 200;
+  flex-direction: column;
+}
+.block-three {
+  background: #f6f1e6;
+  z-index:200;
+  flex-direction: column;
+}
+
+.block-four {
+  background: #fff;
+  z-index:300;
+}
+
+.block-two, .block-three, .block-four {
+    align-items: center; 
+    justify-content: center;
+}
+.block-two section, .block-three section, .block-four section {
+    width: 100%; 
+}
+.side{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5% ;
+ }
+.side2{
+   margin:5%;
+   line-height: 230%;
+ }
+.top_text{
+  width: 105px;
+}
+
+ header{
+    background-color:#f6f1e6;
+ }
+.top{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+/*work-section*/
+.top_work{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom:5%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+ 
+.section_work_websit,.section_work_graphic.float:hover {
+  transform: translateY(-5px);
+}
+
+.top_abaut{
+    background-color:#f6f1e6;
+    padding: 5% 0 10% 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+.top_abaut h1{
+  margin-bottom: 5%;
+
+}
+.about_birthday_1{
+    font-weight: bold;
+    width: 35%;
+}
+.about_line{
+    padding: 5% 5%;
+    border-radius: 50px;
+    border: 1px solid #f4b5cc;
+    background-color:#ffff;
+    width: 45%;
+}
+.abaut_in_line {
+    padding: 3%;
+    border-radius: 50px;
+    border: 1px solid #f4b5cc;
+    background-color:#f6f1e6;
+    width: 30%; 
+    
+}
+.abaut_in_line_2{
+    padding: 3% 0;
+    border-radius: 50px;
+    border: 1px solid #f4b5cc;
+    background-color:#f6f1e6;
+    width: 70%; 
+    margin-left:30%;
+}
+
+.about_line_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about_box td{
+   gap:3%;
+}
+
+
+.hamburger.about{
+  width: 100%;
+  margin-left: 5%;
+  }
+
+
+.about_out_box2{
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_img_main{
+  margin-left:30% ;
+}
+.skill{
+  display: flex;
+  justify-content: center;
+}
+
+.abuut_skill{
+  padding: 3%;
+  background-color:#ffff;
+}
+.about_skill_1{
+  display: flex;
+  margin-left:10%;
+}
+
+.about_birthday_1{
+  font-weight: bold;
+}
+
+
+/*under*/
+
+.under{
+    background-color: #ffff;
+    padding: 5% 0 5% 0;
+    display: flex;
+    justify-content: center;
+}
+.under_line{
+    padding: 3%;
+    border-radius: 50px;
+    border: 1px solid #f4b5cc;
+    background-color:#f6f1e6;
+    width: 40%; 
+}
+.under_img{
+    margin: 10%;
+}
+
+.universaldesign {
+    margin-left: 50%;
+}
+
+.under_text{
+  display: flex;
+  justify-content: center;
+}
+.under_text p{
+  font-size: 14px;
+}
+
+
+
+
+
+/* -------------------------------------------------- */
+/*====================about==========================*/
+/* -------------------------------------------------- */
+.abaut_main_top {
+  padding: 5% 0 5% 0;
+  margin: 0 auto;
+}
+/*abot_main*/
+.about_main {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px; 
+  margin: 3% 0 0 0; 
+}
+.about_img_sub{
+  width:100%;
+  background-image: url("../img/about_2.png");
+  background-size: cover;
+}
+.about_name h2{
+  padding:3% 8% ;
+}
+.description-text p{
+  margin: 0 auto;
+  margin-top: 20%;
+  margin-left: 15%;
+}
+
+
+/*Likeandhobby*/
+.about_like{
+  padding:5% 0 5% 0;
+  display: block;
+  background-color:#f6f1e6 ;
+}
+
+.section_line.likeandhobby{
+  padding-bottom: 3%;
+}
+
+.abaut_in_line3 {
+    padding: 3% 0;
+    border-radius: 50px;
+    border: 1px solid #f4b5cc;
+    background-color:#ffff; 
+    max-width: 500px; 
+    margin: 0 auto;
+  }
+.abaut_in_line3 p{
+  text-align: center; 
+}
+
+/*==Likeandhobby動き==*/
+.fuwafuwa-wrapper {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    margin: 20px auto; 
+}
+
+.fuwafuwa_nurie{
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(../img/about_nurie.png) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 100px;
+  
+}
+
+.fuwafuwa_ra-menn{
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(../img/about_ra-menn.png) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 100px;
+
+}
+
+.fuwafuwa_book{
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(../img/about_book.png) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 100px;
+ 
+}
+.fuwafuwa_me{
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(../img/about_me.png) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 100px;
+  height: 200px;
+ 
+}
+ 
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+ /* .about_imgset{
+  margin: 5%;
+ } */
+ /* .about_img_sub h2{
+ margin-left: 5%;
+ margin-top: 5%;
+} */
+
+/*skill*/
+.skill{
+padding:5% 0 5% 0;
+}
+.section_line.skill{
+  padding:0 0 3% 0;
+}
+.about_sonota {
+    padding-left: 10px;
+}
+
+.circle-container {
+  display: flex; 
+  gap: 10px; 
+  margin: 3% 3% 0 2%;
+}
+
+.circle {
+  width: 20px; 
+  height: 20px; 
+  background-color: #e0b0b0; 
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+.circle_sub {
+  width: 20px;
+  height: 20px;
+  background-color: #ffff; 
+  border-radius: 50%; 
+  border: 1px solid #333; 
+}
+.skill_comment {
+  padding: 5% 0 5% 0;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------- */
+/*=====================work===========================*/
+/* -------------------------------------------------- */
+/* .work_backgroundcolo{ */
+/* } */
+
+.web_1{
+display: flex;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+gap:3%;
+margin-bottom: 3%;
+}
+.work_section_line{
+ margin: 5% 0 5% 0;
+}
+.web_section{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  
+  margin-bottom: 5%;
+}
+
+.web_ring{
+    padding: 3%;
+    border-radius: 50px;
+    border: 1px solid #f4b5cc;
+    background-color:#ffff;
+}
+
+.section_work_website,.section_work_graphic {
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  outline: none;
+  color: #fff;
+  background-color: #1B85FB;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.section_work_website:hover ,.section_work_graphic:hover{
+  transform: scale(1.1,1.1);
+}
+
+/* 以下はレイアウト調整用 */
+body{
+  vertical-align:middle; 
+  text-align: center;
+}
+
+/*workのそれぞれの動き*/
+/*指輪*/
+.c-bnr1.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr1.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr1.bg::after {
+  content: "ring";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr1.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr1.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr1.bg:hover::before,
+.c-bnr1.bg:hover::after {
+  opacity: 1;
+}
+
+/*椅子2*/
+.c-bnr2.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr2.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr2.bg::after {
+  content: "chair";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr2.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr2.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr2.bg:hover::before,
+.c-bnr2.bg:hover::after {
+  opacity: 1;
+}
+
+/*ドーナツ3*/
+.c-bnr3.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr3.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr3.bg::after {
+  content: "donut";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr3.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr3.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr3.bg:hover::before,
+.c-bnr3.bg:hover::after {
+  opacity: 1;
+}
+/*リング（チラシ）4*/
+.c-bnr4.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr4.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr4.bg::after {
+  content: "ring";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr4.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr4.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr4.bg:hover::before,
+.c-bnr4.bg:hover::after {
+  opacity: 1;
+}
+
+
+/*サウナ５*/
+.c-bnr5.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr5.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr5.bg::after {
+  content: "skin care";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr5.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr5.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr5.bg:hover::before,
+.c-bnr5.bg:hover::after {
+  opacity: 1;
+}
+
+/*美容皮膚科６*/
+.c-bnr6.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr6.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr6.bg::after {
+  content: "medicine";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr6.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr6.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr6.bg:hover::before,
+.c-bnr6.bg:hover::after {
+  opacity: 1;
+}
+
+/*スキンケアPOP*/
+.c-bnr7.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr7.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr7.bg::after {
+  content: "skin care";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr7.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr7.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr7.bg:hover::before,
+.c-bnr7.bg:hover::after {
+  opacity: 1;
+}
+
+/*化粧品POP*/
+.c-bnr7.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr7.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr7.bg::after {
+  content: "skin care";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr7.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr7.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr7.bg:hover::before,
+.c-bnr7.bg:hover::after {
+  opacity: 1;
+}
+/**/
+
+.c-bnr7.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr7.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr7.bg::after {
+  content: "skin care";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr7.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr7.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr7.bg:hover::before,
+.c-bnr7.bg:hover::after {
+  opacity: 1;
+}
+
+/**/
+.c-bnr9.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr9.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr9.bg::after {
+  content: "skin care";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr9.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr9.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr9.bg:hover::before,
+.c-bnr9.bg:hover::after {
+  opacity: 1;
+}
+
+
+
+/* ==============================================
+    作品ごとの content 設定
+   ============================================== */
+
+/* ring-overlay の content */
+.ring-overlay::after {
+  content: "ring \A ../02-1work_web_ring/index.html"; 
+  white-space: pre; 
+}
+
+.chair-overlay::after {
+  content: "chair \A ../02-2work_web_chair/index.html";
+  white-space: pre;
+}
+ 
+/* -------------------------------------------------- */
+/*======================ring=========================*/
+/* -------------------------------------------------- */
+
+
+/*==================================================
+  紹介TOP
+==================================================*/
+
+.ringsite_top {
+  padding: 20px 0;
+}
+
+.ringsaite_about_line{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+/* タイトル、タグ、PC画像のラッパー */
+.ringsaite_about_line_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* アウトライン文字のタイトル */
+.outline-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: transparent; /* アウトライン文字化 */
+    -webkit-text-stroke: 2px #f4b5cc; 
+    text-stroke: 2px #f4b5cc;
+    font-family: "Zen Maru Gothic", sans-serif; 
+}
+
+/*  丸いタグ */
+.tag-container {
+    display: flex;
+    gap: 15px;
+}
+.detail-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #f4b5cc;
+    text-stroke:1px #f4b5cc;
+}
+
+/* タグの背景色 */
+.tag-kikaku, .tag-design, .tag-coding {
+    background-color: #ffff; 
+    border: 1px solid #f4b5cc;
+}
+
+/* 企画・デザイン・コーディングの丸いタグ */
+.tag-container {
+  display: flex;
+  gap: 15px;
+}
+
+.detail-tag {
+  width: 40%;
+  text-align: center;
+  padding: 10px 0; 
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffff;/*タグの外観*/
+  border: 1px solid var(--main-pink);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--main-pink);
+  text-stroke: 1px var(--main-pink);
+}
+
+.ring_img_explanation
+{
+  margin-top: 5%;
+  display:block;
+}
+
+.work_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2%
+}
+
+.kikaku p{
+  font-family: "Quicksand", "sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  color: #b5889e;
+}
+
+.design_text{
+  margin-top: 5%;
+
+}
+
+.pallet_box{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.color {
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+}
+/* saunaパレットカラー */
+.main_blue {
+  border: 1px solid #000;
+  background:#5275AE;
+}
+.base_yellow{
+  border: 1px solid #000;
+  background:#F7F7C3;
+}
+
+/* 美容cliniccパレットカラー */
+.main_blackgreen {
+  border: 1px solid #000000;
+  background:#063B39;
+}
+.base_gold{
+  border: 1px solid #000;
+  background:#797148;
+}
+
+/* ringパレットカラー */
+.main_black {
+    background:#000000;
+}
+
+.base_white{
+  border: 1px solid #000;
+  background:#ffffff;
+}
+/* chairーパレットカラー */
+.main_lightbrown{
+  border: 1px solid #000;
+  background:#f8e4c8;
+}
+.accent_brown{
+  border: 1px solid #000;
+  background:#4d4233;
+}
+
+
+/*==================================================
+制作詳細
+==================================================*/
+
+/* リングデザインボード */
+.design-specifications {
+display: flex;
+max-width: 100%;
+margin: 0;
+padding: 20px;
+background-color: transparent;
+gap: 2%;
+justify-content: center;
+}
+
+/* デザインボード全体の外枠 */
+.ringsaite_about_line {
+border-radius: 50px;
+border: 3px solid var(--main-pink);
+background-color: #ffff;
+width: 90%;
+max-width: 1000px;
+margin: 5% auto 5%;
+padding: 30px;
+display: flex;
+justify-content:space-evenly;
+align-items: flex-start;
+}
+
+/* ペルソナ/デザイン仕様 */
+.spec-table {
+line-height: 200%;
+border-collapse: separate;
+border-spacing: 0 5px;
+background-color: #ffffff;
+}
+
+.persona-top {
+display:block;
+}
+
+/* 文字親設定 */
+.label-box-oya{
+width: 100%;
+margin:3% 0;
+gap: 5%;
+}
+
+.label-box-oya p{
+text-align: center;
+}
+
+.label-box p{
+margin-bottom:3%;
+text-align: center;
+}
+
+/* 文字背景*/
+.font_back,.label-box {
+width: 50%;
+color: #ffff;
+background-color: #b9b68b;
+border-radius: 30px;
+text-align: center;
+margin: auto;
+}
+
+/* 文字位置*/
+.spec-table td{
+text-align: left;
+padding-left: 10px;
+width: auto;
+margin: 0 auto;
+}
+
+/* デザインコンセプト設定 */
+.design-concept-block{
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+width: 45%; 
+flex-shrink: 0;
+}
+
+
+/* ペルソナ説明文 */
+.persona-list {
+margin-top: 10px;
+margin-left: 0;
+text-align: left;
+list-style: none;
+}
+
+.persona-list li {
+position: relative;
+padding-right: 20px;
+padding-left: 15px;
+line-height: 1.8;
+}
+
+.persona-list li::before {
+content: '•'; /* 黒丸 */
+position: absolute;
+left: 5px;
+color: var(--main-color);
+font-size: 1.2em;
+top: 0;
+}
+
+.ringsaite_about_line.under {
+border-radius: 50px;
+border: 3px solid var(--main-pink);
+background-color: #ffff;
+width: 90%;
+max-width: 1000px;
+margin: 5% auto 5%;
+padding: 30px;
+flex-direction: column;
+justify-content: space-around;
+align-items: flex-start;
+}
+
+
+/* スクロール */
+.device-mockup {
+width: 100%;
+height: 100%;
+margin: 3% auto 0;
+overflow: hidden;
+border: 3px solid #FF2EB9;
+border-radius: 30px;
+}
+
+
+
+/* 埋め込んだサイト（iframe）の設定 */
+.device-mockup iframe {
+width: 100%;
+height: 100%;
+overflow-y: scroll;
+}
+
+/* ここまでOK */
+.ring_color{
+display: flex;
+gap: 3%;
+}
+
+.ringsite_third_explanation p{
+line-height: 170%;
+}
+
+/* ポートフォリオコンテナの基本デザイン */
+.portfolio-detail-box {
+padding: 30px;
+background-color: #fcf6f1;
+border-radius: 70px;
+border: 3px solid #f4b5cc;
+max-width: 900px;
+margin: 20px auto;
+}
+/*==================================================
+グローバル/共通スタイル
+==================================================*/
+:root {
+/* デザイン全体で使う色を定義 (例として設定) */
+--light-bg-color: #f6f1e6; /* 全体の薄い背景色 */
+--main-pink: #f4b5cc; /* メインのピンク色 (濃いめ) */
+--light-pink: #fcebe4; /* 薄いピンクの背景色 */
+--text-color: #333;
+}
+
+.work_ring_backgroundcolor, .work_backgroundcolor {
+background-color: var(--light-bg-color);
+}
+
+/*==================================================
+RINGサイト制作（ポートフォリオ詳細）セクション
+==================================================*/
+
+/* タイトル「指輪サイト 制作」のアウトライン文字 */
+.outline-title {
+font-size: 48px;
+font-weight: bold;
+/* アウトライン文字化 */
+color: transparent;
+-webkit-text-stroke: 2px var(--main-pink);
+text-stroke: 2px var(--main-pink);
+font-family: "Zen Maru Gothic", sans-serif;
+/* タグとの位置調整のため、背景ボックスは不要 */
+padding: 0;
+margin: 0;
+}
+
+
+
+
+
+/* PC画像 (work_ring.png) */
+.ring_img {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+}
+
+.ring_img img {
+width: 100%;
+height: auto;
+}
+
+.sauna-img {
+width: auto;
+height: auto;
+max-width: none;
+}
+
+/*==================================================
+  ハンバーガーメニュー (drawer.js) のカスタマイズ - アニメーション強化版
+==================================================*/
+
+/* グローバル変数（再掲） */
+:root {
+  --main-pink: #f4b5cc;      
+  --menu-bg-light: #f7d8e2;  
+  --white-trans: rgba(255, 255, 255, 0.9);
+  --dark-text: #2c2c2c; /* メニュー内のタイトルなどに使用 */
+}
+
+/* 1. ドロワーメニュー全体の見た目と開閉アニメーション */
+.drawer-nav {
+    /* グラデーション背景と影 */
+    background: linear-gradient(135deg, var(--main-pink) 0%, var(--menu-bg-light) 100%); 
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.25); /* 影を濃くして立体感を強調 */
+    width: 280px; 
+    
+    /* 開閉アニメーションをスプリングのような弾む動きに */
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); 
+}
+
+/* 2. メニューアイテムのコンテナとタイトル */
+
+.hamburger{
+  padding: 3% 0;
+  border-radius: 50px;
+  border: 1px solid #f4b5cc;
+  background-color:#f6f1e6;
+  width: 70%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hamburger {
+  box-shadow: 0 4px 0 #d00a8b; 
+}
+.hamburger:hover {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+
+.drawer-menu {
+  text-align: center;
+}
+.drawer-menu .menu-title h1 {
+    color: var(--dark-text); 
+    padding: 10px 30px; 
+    margin-bottom: 25px; 
+    font-size: 16px; 
+    font-weight: 700; 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    position: relative;
+}
+
+.drawer-menu h2,h1 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+/* メニュータイトルの装飾下線 */
+.drawer-menu .menu-title h1::after {
+    content: '';
+    display: block;
+    width: 40px; /* 長く */
+    height: 3px; 
+    background-color: var(--dark-text);
+    margin-top: 10px;
+    margin-left: 30px; 
+    opacity: 0.8;
+}
+.abaut_in_line_2{
+  margin-top: 3%;
+}
+
+/* 3. 各メニューリンクの調整とアニメーション */
+.drawer-menu-item.main-link {
+    padding: 18px 30px; 
+    color: var(--dark-text); /* リンク文字も濃い色に */
+    font-size: 18px;
+    font-weight: 600; 
+    display: block;
+    position: relative; 
+    overflow: hidden; 
+    
+    /* ホバーエフェクトのためのトランジション */
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* 初期状態では非表示 (メニューが開いた時にアニメーションで表示) */
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+/* メニューが開いた時のアイテムのフェードインアニメーション */
+.drawer-open .drawer-menu-item.main-link {
+    opacity: 1;
+    transform: translateY(0);
+    /* 順番に表示されるように遅延を設定 */
+    transition-delay: 0.2s; /* 全体のアニメーション開始を遅延 */
+}
+.drawer-open li:nth-child(2) .main-link { transition-delay: 0.25s; } /* about */
+.drawer-open li:nth-child(3) .main-link { transition-delay: 0.30s; } /* work */
+
+
+/* ホバー時の浮遊エフェクトと影 */
+.drawer-menu-item.main-link:hover {
+    color: #fff; /* ホバーで文字を白に反転 */
+    /* マウスオーバー時にわずかに浮き上がる効果 */
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 浮遊感のある影 */
+}
+
+/* 背景スライドエフェクト */
+.drawer-menu-item.main-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-pink); /* ホバー時の背景色 */
+    z-index: 0;
+    opacity: 0; 
+    /* ホバー時の背景フェードインアニメーション */
+    transition: opacity 0.3s ease; 
+}
+.drawer-menu-item.main-link:hover::before {
+    opacity: 1; 
+}
+.drawer-menu-item.main-link:hover {
+    z-index: 1; /* ホバーされたアイテムを前面に */
+}
+
+
+/* 4. ハンバーガーアイコンのカスタマイズと回転アニメーション */
+.drawer-hamburger-icon,
+.drawer-hamburger-icon::before,
+.drawer-hamburger-icon::after {
+    background-color: var(--main-pink); /* アイコンの色もメインカラーに */
+    /* すべての動きをスムーズに */
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+/* 開いた時のアイコンの「X」字へのスムーズな変換 */
+.drawer-open .drawer-hamburger-icon {
+    background-color: transparent; 
+}
+.drawer-open .drawer-hamburger-icon::before {
+    transform: translateY(5px) rotate(45deg); 
+}
+.drawer-open .drawer-hamburger-icon::after {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+/* メインコンテンツを暗くする効果 */
+.drawer-open main {
+    filter: brightness(0.7); 
+    transition: filter 0.5s ease-out;
+    pointer-events: none; 
+}
+
+/* グラフック文字背景（使用箇所が不明なため一旦残す） */
+.font_back_g{
+  color: #ffff;
+  background-color: #b5889e;
+}
+.label-box_g {
+  color: #ffff;
+  background-color: #b5889e;
+  width: auto;
+  flex-shrink: 0;
+  padding: 5px 15px; 
+}
+
+/* 最新のカラーコードをCSS変数として定義 */
+:root {
+    --main-color-val: #d7b6bd; 
+    --base-color-val: #fefefe; 
+    --accent-color-val: #9d1f3b; 
+    --background-color: #f6f1e6; 
+    --text-color: #000000;
+}
+
+/* ------------------------------------------- */
+/* カラーコード情報の親要素 */
+/* ------------------------------------------- */
+.ring_color {
+    display: flex; 
+    gap: 30px; 
+    margin-bottom: 20px; 
+    padding: 0 20px;
+    align-items: center;
+}
+.ring_color p {
+    /* Main:, Base:, Accent: のテキストスタイル */
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* ------------------------------------------- */
+/* 色付きの丸（円）を作成するスタイル */
+/* ------------------------------------------- */
+.color-circle {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%; 
+    margin-right: 5px;
+    vertical-align: middle; /* テキストと高さを揃える */
+    border: 1px solid #333; /* 輪郭をはっきりさせるための細い枠線 */
+    position: relative;
+    top: -1px; 
+}
+
+/* 各色を適用 */
+.main-color-val {
+    background-color: var(--main-color-val); /* 薄い茶色 */
+    border-color: var(--main-color-val); /* 輪郭の色も同じに */
+}
+.base-color-val {
+    background-color: var(--base-color-val); /* 白 */
+    border-color: #333; /* 輪郭を黒で強調 */
+}
+.accent-color-val {
+    background-color: var(--accent-color-val); /* 濃い赤茶色 */
+    border-color: var(--accent-color-val);
+}
+
+/*==================================================
+  ドーナツ作品の吹き出しレイアウト
+==================================================*/
+
+/* 1. 基準点の設定 */
+.ring_img_third {
+  position: relative; 
+}
+
+/* 2. メイン画像エリアの調整 */
+/* ring_img はそのまま配置し、土台とする */
+.ring_img {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* 3. 吹き出しテキストコンテナの重ね合わせ */
+.speech-bubble-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  z-index: 10; 
+}
+
+/* 4. 個別の吹き出しテキストの位置調整（画像全体に対する位置） */
+.bubble {
+  position: absolute; /* speech-bubble-container を基準に配置 */
+  width: 20%; /* テキストブロックの幅（画像に対する割合） */
+}
+
+/* 右上の吹き出しテキストの位置調整 */
+.bubble-top-right {
+  top:20%;  
+  right: 10%;
+}
+
+/* 左下の吹き出しテキストの位置調整 */
+.bubble-bottom-left {
+  bottom: 25%;
+  left:1.5%; 
+}
+
+
+/* 5. 吹き出し内のテキストのスタイル */
+.bubble-text {
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+
+/* 文字色調整 */
+.bubble-text-top-right,.bubble-text-bottom-left {
+  color: #555; 
+  font-weight: bold;
+}
+
+/*下の画像調整（丸み）*/
+.graphic_ring_img img{
+  border-radius:52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; 
+  width: 100%;
+  height: auto;
+}
+
+/* レスポンシブ調整の例 */
+@media (max-width: 768px) {
+  .bubble {
+    width: 30%;
+  }
+  .bubble-top-right {
+    top: 20%;
+    right: 5%;
+  }
+  .bubble-bottom-left {
+    bottom: 20%;
+    left: 2%;
+  }
+  .bubble-text {
+    font-size: 10px;
+  }
+}
+/*==================================================
+  RING作品の吹き出しレイアウト
+==================================================*/
+
+/* 1. 基準点の設定 (ドーナツ作品と共通) */
+/* .ring_img_third と .speech-bubble-container の基本設定は流用 */
+
+/* 2. 個別の吹き出しテキストの位置調整 */
+
+/* 左上の吹き出しテキスト */
+.bubble-top-left-ring {
+  position: absolute;
+  top: 36%; 
+  left: 1%;  
+  width: 15%; 
+}
+
+/* 右上の吹き出しテキスト */
+.bubble-top-right-ring {
+  position: absolute;
+  top: 13%;  
+  right: 9%; 
+  width: 20%;
+}
+
+/* 下中央の吹き出しテキスト */
+.bubble-bottom-center-ring {
+  position: absolute;
+  bottom: 6%; 
+  right: 31%;  
+  width: 15%;
+}
+
+/* 3. 吹き出し内のテキストのスタイル */
+.bubble-text-ring-right,.bubble-text-ring-left,.bubble-text-ring-bottom {
+  color: #555; 
+  font-weight: bold;
+}
+
+
+/* レスポンシブ調整の例 */
+@media (max-width: 768px) {
+  .bubble-top-left-ring {
+    top: 25%;
+    left: 2%;
+    width: 25%;
+  }
+  .bubble-top-right-ring {
+    top: 10%;
+    right: 2%;
+    width: 30%;
+  }
+  .bubble-bottom-center-ring {
+    bottom: 5%;
+    right: 15%;
+    width: 20%;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 360px) {}
+
