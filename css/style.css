@@ -1234,7 +1234,7 @@ body{
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: transparent; /* アウトライン文字化 */
+    color: transparent;
     -webkit-text-stroke: 2px #f4b5cc; 
     text-stroke: 2px #f4b5cc;
     font-family: "Zen Maru Gothic", sans-serif; 
@@ -1275,7 +1275,7 @@ body{
   border-radius: 50px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #ffff;/*タグの外観*/
+  background-color: #ffff;
   border: 1px solid var(--main-pink);
   color: transparent;
   -webkit-text-stroke: 1px var(--main-pink);
@@ -1491,6 +1491,11 @@ margin-bottom:3%;
 text-align: center;
 }
 
+.text-center {
+    text-align: center;
+    width: 100%; 
+}
+
 /* 文字背景*/
 .font_back,.label-box {
 width: 60%;
@@ -1677,9 +1682,9 @@ width: 250px;
     object-fit: contain; 
 }
 
-/*==================================================
+/*==============================================================
   7.ハンバーガーメニュー (drawer.js) のカスタマイズ - アニメーション強化版
-==================================================*/
+================================================================*/
 
 /* グローバル変数（再掲） */
 :root {
@@ -2111,14 +2116,8 @@ width: 250px;
     align-items: center;    
   }
 
-  /* ラベルとテキストの親要素 */
-  .label-box-oya {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    margin-bottom: 20px;
-    width: 100%;
-  }
+ 
+  
 
   /* 箇条書きリストの左の余白を消して中央へ */
   .persona-list {
