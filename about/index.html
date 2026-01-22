@@ -41,6 +41,20 @@
     });
   </script>
 
+<!--フェードインー-->
+   <script>
+    $(window).scroll(function (){
+	$('.fadein').each(function(){
+		var elemPos = $(this).offset().top,
+		scroll = $(window).scrollTop(),
+		windowHeight = $(window).height();
+
+			if (scroll > elemPos - windowHeight + 150){
+				$(this).addClass('scrollin');
+			}
+	});
+});
+</script>
   <!--iscroll-->
 <script src="../js/js/iscroll-master/build/iscroll.js"></script>
 
@@ -80,13 +94,14 @@
     </section> 
 
     <!--Likeandhobby-->
+    <div class="fadein fadein-bottom">
     <section class="about_like">
       <div class="section_line likeandhobby">
       <h1>------Likeandhobby------
       </h1>
       </div>
             <div class="abaut_in_line3">
-            <p>読書・食べること・塗り絵・アニメ鑑賞・歩くこと</p>
+            <p>塗り絵・食べること・読書・歩くこと・アニメ鑑賞</p>
             </div>
             <div class="fuwafuwa-wrapper">
               <div class="fuwafuwa_nurie"></div>
@@ -95,12 +110,14 @@
               <div class="fuwafuwa_me"></div>
             </div>
             <div class="abaut_in_line3">
-            <p>一度始めると、熱中し完成するまで行います。</p>
+            <p>熱中して一気に仕上げる完遂力と、計画性を両立しています。</p>
             </div>
     </section>
+    </div>
 
 
     <!--skill-->
+    <div class="fadein fadein-bottom">
     <section class="skill">
       <div class="about_skill">
         <div class="section_line skill">
@@ -113,7 +130,7 @@
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
-            <div class="circle"></div>
+             <div class="circle_sub"></div>
             </div>
           <div><img src="../img/about_vs.png" width="50px" height="50px" alt="VSコード"></div> 
             <div class="circle-container">
@@ -121,7 +138,7 @@
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="circle_sub"></div>
             </div>
           <div><img src="../img/about_html.png" width="50px" height="50px" alt="HTML "></div> 
             <div class="circle-container">
@@ -129,7 +146,7 @@
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
-            <div class="circle"></div>
+           <div class="circle_sub"></div>
             </div>
         </div>
         <div class="about_skill_1">
@@ -147,7 +164,7 @@
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="circle_sub"></div>
             </div>
           <div><img src="../img/about_css.png" width="50px" height="50px" alt="css"></div> 
             <div class="circle-container">
@@ -155,13 +172,13 @@
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="circle_sub"></div>
             </div>
         </div>
 
         <div class="about_skill_1">
                    <div><img src="../img/about_id.png" width="50px" height="50px" alt="アイディー"></div> 
-                  <div class="circle-container">
+                    <div class="circle-container">
                     <div class="circle"></div>
                     <div class="circle"></div>
                     <div class="circle"></div>
@@ -172,25 +189,24 @@
                   <div class="circle-container">
                     <div class="circle"></div>
                     <div class="circle"></div>
-                    <div class="circle"></div>
                     <div class="circle_sub"></div>
                     <div class="circle_sub"></div>
-                    </div>
-                  <div class="about_sonota">
-                    <p>その他</p>
+                    <div class="circle_sub"></div>
                   </div>
+                  <div class="about_sonota"> 
                   <div><img src="../img/about_excel.png" width="50px" height="50px" alt="エクセル"></div> 
                   <div><img src="../img/about_word.png" width="50px" height="50px" alt="ワード"></div> 
                   <div><img src="../img/about_p.png" width="50px" height="50px" alt="パワーポイント"></div> 
                   <div><img src="../img/about_a.png" width="50px" height="50px" alt="アクセス"></div> 
                   <div><img src="../img/about_canva.png" width="50px" height="50px" alt="キャンバ"></div> 
-          </div>
+                 </div>
+        </div>
           <div class="skill_comment">
-                    <p>WEBサイト、ランディングページ（LP）、バナーのデザインを制作します。クライアントのビジョンとブランド価値を深く理解し、<br>
-                    それを魅力的に伝えるデザインを提供。ユーザー視点を重視し、直感的で使いやすいクリエイティブを心がけています。</p>
+                    <p>WEBサイト、ランディングページ（LP）、バナーのデザインを制作します。<br>クライアントのビジョンとブランド価値を深く理解し、それを魅力的に伝えるデザインを提供。<br>ユーザー視点を重視し、直感的で使いやすいクリエイティブを心がけています。</p>
           </div>
         </div>
     </section>
+    </div>
 
 
 

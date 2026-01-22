@@ -1,10 +1,29 @@
+/* =================================================
+   INDEX (目次)
+   1. 基本設定
+   2. TOP
+   3. ABOUT
+   4. WORK
+   5. 作品ごとの content 設定
+   6. パレットBOX
+   7. ハンバーガーメニュー
+   8. カラーコード情報の親要素
+   9. 色付きの丸（円）を作成するスタイル 
+   10.ドーナツ作品の吹き出しレイアウト
+   11.アニメーション 
+   ================================================= */
 @charset "utf-8";
+/* 1. 基本設定*/
 /* CSS Document */
 img{
     max-width: 100%;height: auto;
 }
 
 /*共通文字*/
+body{
+  color: #2d2b2b;
+}
+
 h1{
     font-family: "Micro 5","Not serif";
     font-size: 40px;
@@ -31,9 +50,9 @@ a:visited {text-decoration: none;color:#e2b9cc;}
     max-width: 1200px;
     margin: o auto;
 }
-/* -------------------------------------------------- */
- /*TOP*/
- /* -------------------------------------------------- */
+/*--------------------------------------------------- */
+ /*====================2.TOP============================*/
+ /* --------------------------------------------------*/
  /*===TOPの動き====*/
 .block {
   width: 100%;
@@ -103,10 +122,9 @@ a:visited {text-decoration: none;color:#e2b9cc;}
 /*work-section*/
 .top_work{
     text-align: center;
-    margin-top: 5%;
-    margin-bottom:5%;
-    display: flex;
-    gap: 5%;
+    padding: 5% 0 10% 0;
+    display: block;
+    gap:5%;
     justify-content: center;
 }
  
@@ -122,7 +140,8 @@ a:visited {text-decoration: none;color:#e2b9cc;}
     align-items: center; 
     flex-direction: column;
 }
-.top_abaut h1{
+.top_abaut h1,
+.top_work h1{
   margin-bottom: 5%;
 
 }
@@ -142,8 +161,7 @@ a:visited {text-decoration: none;color:#e2b9cc;}
     border-radius: 50px;
     border: 1px solid #f4b5cc;
     background-color:#f6f1e6;
-    width: 30%; 
-    
+    width: 30vh; 
 }
 .abaut_in_line_2{
     padding: 3% 0;
@@ -158,7 +176,6 @@ a:visited {text-decoration: none;color:#e2b9cc;}
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .about_box td{
    gap:3%;
@@ -223,19 +240,20 @@ a:visited {text-decoration: none;color:#e2b9cc;}
 }
 
 .under_text{
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 .under_text p{
   font-size: 14px;
+  display: inline-block; 
+  text-align:center;
 }
 
 
 
-
-
 /* -------------------------------------------------- */
-/*====================about==========================*/
+/*====================3.ABOUT==========================*/
 /* -------------------------------------------------- */
 .abaut_main_top {
   padding: 5% 0 5% 0;
@@ -341,13 +359,6 @@ a:visited {text-decoration: none;color:#e2b9cc;}
     transform:translate(0, 0) rotate(7deg);
   }
 }
- /* .about_imgset{
-  margin: 5%;
- } */
- /* .about_img_sub h2{
- margin-left: 5%;
- margin-top: 5%;
-} */
 
 /*skill*/
 .skill{
@@ -356,9 +367,10 @@ padding:5% 0 5% 0;
 .section_line.skill{
   padding:0 0 3% 0;
 }
-.about_sonota {
-    padding-left: 10px;
-}
+ .about_sonota {
+  display: flex;
+  gap: 1%;  
+} 
 
 .circle-container {
   display: flex; 
@@ -383,10 +395,17 @@ padding:5% 0 5% 0;
 .skill_comment {
   padding: 5% 0 5% 0;
   margin: 0 auto;
+  text-align: center; 
+  width: 100%;
+}
+
+.skill_comment p {
+  display: inline-block; 
+  text-align: center;  
 }
 
 /* -------------------------------------------------- */
-/*=====================work===========================*/
+/*=====================4.WORK===========================*/
 /* -------------------------------------------------- */
 /* .work_backgroundcolo{ */
 /* } */
@@ -776,8 +795,8 @@ body{
 .c-bnr6.bg:hover::after {
   opacity: 1;
 }
+/*キャンペーン（ダーマ）7*/
 
-/*スキンケアPOP*/
 .c-bnr7.bg {
   position: relative;
   overflow: hidden;
@@ -795,7 +814,7 @@ body{
 }
 
 .c-bnr7.bg::after {
-  content: "skin care";
+  content: "campaign";
   display: block;
   position: absolute;
   margin: auto;
@@ -833,12 +852,12 @@ body{
   opacity: 1;
 }
 
-/*化粧品POP*/
-.c-bnr7.bg {
+/*セラムPOP8*/
+.c-bnr8.bg {
   position: relative;
   overflow: hidden;
 }
-.c-bnr7.bg::before{
+.c-bnr8.bg::before{
   content: "";
   display: block;
   position: absolute;
@@ -850,8 +869,8 @@ body{
   opacity: 0;
 }
 
-.c-bnr7.bg::after {
-  content: "skin care";
+.c-bnr8.bg::after {
+  content: "serum";
   display: block;
   position: absolute;
   margin: auto;
@@ -861,13 +880,13 @@ body{
   transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
   opacity: 0;
 }
-.c-bnr7.bg::before {
+.c-bnr8.bg::before {
   background: rgba(242, 125, 201, 0.6);
   width: 100%;
   height: 100%;
   border-radius: 50px;
 }
-.c-bnr7.bg::after {
+.c-bnr8.bg::after {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
@@ -884,68 +903,12 @@ body{
   right: 0;
 }
  
-.c-bnr7.bg:hover::before,
-.c-bnr7.bg:hover::after {
-  opacity: 1;
-}
-/**/
-
-.c-bnr7.bg {
-  position: relative;
-  overflow: hidden;
-}
-.c-bnr7.bg::before{
-  content: "";
-  display: block;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
-  opacity: 0;
-}
-
-.c-bnr7.bg::after {
-  content: "skin care";
-  display: block;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
-  opacity: 0;
-}
-.c-bnr7.bg::before {
-  background: rgba(242, 125, 201, 0.6);
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-}
-.c-bnr7.bg::after {
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  right: 0;
-  width: 100%; 
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
- 
-.c-bnr7.bg:hover::before,
-.c-bnr7.bg:hover::after {
+.c-bnr8.bg:hover::before,
+.c-bnr8.bg:hover::after {
   opacity: 1;
 }
 
-/**/
+/*BTXPOP9*/
 .c-bnr9.bg {
   position: relative;
   overflow: hidden;
@@ -963,7 +926,7 @@ body{
 }
 
 .c-bnr9.bg::after {
-  content: "skin care";
+  content: "BTX";
   display: block;
   position: absolute;
   margin: auto;
@@ -1001,10 +964,231 @@ body{
   opacity: 1;
 }
 
+/*DrCOSSME10*/
+.c-bnr10.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr10.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
 
+.c-bnr10.bg::after {
+  content: "skin care";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr10.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr10.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr10.bg:hover::before,
+.c-bnr10.bg:hover::after {
+  opacity: 1;
+}
+
+/*Single Post11*/
+.c-bnr11.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr11.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr11.bg::after {
+  content: "single post";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr11.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr11.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr11.bg:hover::before,
+.c-bnr11.bg:hover::after {
+  opacity: 1;
+}
+/*On the day12*/
+.c-bnr12.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr12.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr12.bg::after {
+  content: "on the day";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr12.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr12.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr12.bg:hover::before,
+.c-bnr12.bg:hover::after {
+  opacity: 1;
+}
+
+/*アサイー13*/
+.c-bnr13.bg {
+  position: relative;
+  overflow: hidden;
+}
+.c-bnr13.bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+
+.c-bnr13.bg::after {
+  content: "açaí";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+.c-bnr13.bg::before {
+  background: rgba(242, 125, 201, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.c-bnr13.bg::after {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ 
+.c-bnr13.bg:hover::before,
+.c-bnr13.bg:hover::after {
+  opacity: 1;
+}
 
 /* ==============================================
-    作品ごとの content 設定
+    5.作品ごとの content 設定
    ============================================== */
 
 /* ring-overlay の content */
@@ -1055,6 +1239,7 @@ body{
     text-stroke: 2px #f4b5cc;
     font-family: "Zen Maru Gothic", sans-serif; 
 }
+
 
 /*  丸いタグ */
 .tag-container {
@@ -1117,10 +1302,13 @@ body{
   color: #b5889e;
 }
 
-.design_text{
-  margin-top: 5%;
-
+.design_text.sc{
+  margin-top: 2%;
 }
+
+/*==================================================
+  6.パレットBOX
+==================================================*/
 
 .pallet_box{
  display: flex;
@@ -1139,6 +1327,7 @@ body{
     border-color: transparent;
     border-image: initial;
 }
+
 /* saunaパレットカラー */
 .main_blue {
   border: 1px solid #000;
@@ -1147,6 +1336,16 @@ body{
 .base_yellow{
   border: 1px solid #000;
   background:#F7F7C3;
+}
+
+/* スキンケアパレットカラー */
+.main_lightblue{
+  border: 1px solid #000;
+  background:#C6E9F3;
+}
+.base_darkblue{
+  border: 1px solid #000;
+  background:#5990D6;
 }
 
 /* 美容cliniccパレットカラー */
@@ -1177,6 +1376,62 @@ body{
   border: 1px solid #000;
   background:#4d4233;
 }
+/* ドーナツーパレットカラー */
+.main_smokypink{
+  border: 1px solid #000;
+  background:#d7b6bd;
+}
+
+.base_white_d{
+  border: 1px solid #000;
+  background:#fefefe;
+
+}
+.accent_red{
+  border: 1px solid #000;
+  background:#9d1f3b;
+}
+/* POPスキンケアパレットカラー */
+.main_blue_pc{
+  border: 1px solid #000;
+  background:#afc8e8;
+}
+
+.base_white_d{
+  border: 1px solid #000;
+  background:#fefefe;
+
+}
+.accent_red_pc{
+  border: 1px solid #000;
+  background:#e71e20;
+}
+
+/* POPBTXパレットカラー */
+.main_blue_pb{
+  border: 1px solid #000;
+  background:#abc7d5;
+}
+
+.base_white_d{
+  border: 1px solid #000;
+  background:#fefefe;
+
+}
+.accent_grey_pb{
+  border: 1px solid #000;
+  background:#454444;
+}
+
+/* アサイーパレットカラー */
+.main_pink_ai{
+  border: 1px solid #000;
+  background:#f1a3c5;
+}
+.accent_yellow_ai{
+   border: 1px solid #000;
+  background:#f7efa8;
+}
 
 
 /*==================================================
@@ -1205,7 +1460,7 @@ margin: 5% auto 5%;
 padding: 30px;
 display: flex;
 justify-content:space-evenly;
-align-items: flex-start;
+align-items: center;
 }
 
 /* ペルソナ/デザイン仕様 */
@@ -1238,7 +1493,7 @@ text-align: center;
 
 /* 文字背景*/
 .font_back,.label-box {
-width: 50%;
+width: 60%;
 color: #ffff;
 background-color: #b9b68b;
 border-radius: 30px;
@@ -1254,7 +1509,7 @@ width: auto;
 margin: 0 auto;
 }
 
-/* デザインコンセプト設定 */
+/* デザインコンセプト設定 web*/
 .design-concept-block{
 display:flex;
 justify-content: center;
@@ -1264,6 +1519,25 @@ width: 45%;
 flex-shrink: 0;
 }
 
+/* デザインコンセプト設定 POP・SNS*/
+.design-concept-block-ps{
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+flex-shrink: 0;
+}
+
+
+/* ドーナツデザインコンセプト設定 */
+.design-concept-block.d{
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+width:60%; 
+flex-shrink: 0;
+}
 
 /* ペルソナ説明文 */
 .persona-list {
@@ -1302,10 +1576,19 @@ justify-content: space-around;
 align-items: flex-start;
 }
 
+/* work_sns_singlepostの一覧改行 */
+.ringsaite_about_line.singlepost
+{
+ display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 /* スクロール */
 .device-mockup {
-width: 100%;
+width: 350px;
 height: 100%;
 margin: 3% auto 0;
 overflow: hidden;
@@ -1346,9 +1629,9 @@ margin: 20px auto;
 ==================================================*/
 :root {
 /* デザイン全体で使う色を定義 (例として設定) */
---light-bg-color: #f6f1e6; /* 全体の薄い背景色 */
---main-pink: #f4b5cc; /* メインのピンク色 (濃いめ) */
---light-pink: #fcebe4; /* 薄いピンクの背景色 */
+--light-bg-color: #f6f1e6; 
+--main-pink: #f4b5cc; 
+--light-pink: #fcebe4; 
 --text-color: #333;
 }
 
@@ -1374,31 +1657,28 @@ padding: 0;
 margin: 0;
 }
 
-
-
-
-
 /* PC画像 (work_ring.png) */
-.ring_img {
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0;
+
+.ring_img.sns img{
+width: 250px;
 }
 
-.ring_img img {
-width: 100%;
-height: auto;
+.ring_img, .sauna-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; 
 }
 
-.sauna-img {
-width: auto;
-height: auto;
-max-width: none;
+.ring_img img, .sauna-img img {
+    width: 100%;       
+    max-width: 450px;  
+    height: auto;      
+    object-fit: contain; 
 }
 
 /*==================================================
-  ハンバーガーメニュー (drawer.js) のカスタマイズ - アニメーション強化版
+  7.ハンバーガーメニュー (drawer.js) のカスタマイズ - アニメーション強化版
 ==================================================*/
 
 /* グローバル変数（再掲） */
@@ -1406,14 +1686,14 @@ max-width: none;
   --main-pink: #f4b5cc;      
   --menu-bg-light: #f7d8e2;  
   --white-trans: rgba(255, 255, 255, 0.9);
-  --dark-text: #2c2c2c; /* メニュー内のタイトルなどに使用 */
+  --dark-text: #2c2c2c; 
 }
 
 /* 1. ドロワーメニュー全体の見た目と開閉アニメーション */
 .drawer-nav {
     /* グラデーション背景と影 */
     background: linear-gradient(135deg, var(--main-pink) 0%, var(--menu-bg-light) 100%); 
-    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.25); /* 影を濃くして立体感を強調 */
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.25); 
     width: 280px; 
     
     /* 開閉アニメーションをスプリングのような弾む動きに */
@@ -1466,7 +1746,7 @@ max-width: none;
 .drawer-menu .menu-title h1::after {
     content: '';
     display: block;
-    width: 40px; /* 長く */
+    width: 40px; 
     height: 3px; 
     background-color: var(--dark-text);
     margin-top: 10px;
@@ -1480,7 +1760,7 @@ max-width: none;
 /* 3. 各メニューリンクの調整とアニメーション */
 .drawer-menu-item.main-link {
     padding: 18px 30px; 
-    color: var(--dark-text); /* リンク文字も濃い色に */
+    color: var(--dark-text);
     font-size: 18px;
     font-weight: 600; 
     display: block;
@@ -1508,7 +1788,7 @@ max-width: none;
 
 /* ホバー時の浮遊エフェクトと影 */
 .drawer-menu-item.main-link:hover {
-    color: #fff; /* ホバーで文字を白に反転 */
+    color: #fff; 
     /* マウスオーバー時にわずかに浮き上がる効果 */
     transform: translateY(-2px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 浮遊感のある影 */
@@ -1522,7 +1802,7 @@ max-width: none;
     left: 0; 
     width: 100%;
     height: 100%;
-    background-color: var(--main-pink); /* ホバー時の背景色 */
+    background-color: var(--main-pink);
     z-index: 0;
     opacity: 0; 
     /* ホバー時の背景フェードインアニメーション */
@@ -1540,8 +1820,7 @@ max-width: none;
 .drawer-hamburger-icon,
 .drawer-hamburger-icon::before,
 .drawer-hamburger-icon::after {
-    background-color: var(--main-pink); /* アイコンの色もメインカラーに */
-    /* すべての動きをスムーズに */
+    background-color: var(--main-pink); 
     transition: transform 0.4s ease, background-color 0.4s ease;
 }
 
@@ -1586,7 +1865,7 @@ max-width: none;
 }
 
 /* ------------------------------------------- */
-/* カラーコード情報の親要素 */
+/* 8.カラーコード情報の親要素 */
 /* ------------------------------------------- */
 .ring_color {
     display: flex; 
@@ -1602,7 +1881,7 @@ max-width: none;
 }
 
 /* ------------------------------------------- */
-/* 色付きの丸（円）を作成するスタイル */
+/* 9.色付きの丸（円）を作成するスタイル */
 /* ------------------------------------------- */
 .color-circle {
     display: inline-block;
@@ -1610,28 +1889,28 @@ max-width: none;
     height: 14px;
     border-radius: 50%; 
     margin-right: 5px;
-    vertical-align: middle; /* テキストと高さを揃える */
-    border: 1px solid #333; /* 輪郭をはっきりさせるための細い枠線 */
+    vertical-align: middle; 
+    border: 1px solid #333; 
     position: relative;
     top: -1px; 
 }
 
 /* 各色を適用 */
 .main-color-val {
-    background-color: var(--main-color-val); /* 薄い茶色 */
-    border-color: var(--main-color-val); /* 輪郭の色も同じに */
+    background-color: var(--main-color-val); 
+    border-color: var(--main-color-val); 
 }
 .base-color-val {
-    background-color: var(--base-color-val); /* 白 */
-    border-color: #333; /* 輪郭を黒で強調 */
+    background-color: var(--base-color-val); 
+    border-color: #333;
 }
 .accent-color-val {
-    background-color: var(--accent-color-val); /* 濃い赤茶色 */
+    background-color: var(--accent-color-val); 
     border-color: var(--accent-color-val);
 }
 
 /*==================================================
-  ドーナツ作品の吹き出しレイアウト
+  10.ドーナツ作品の吹き出しレイアウト
 ==================================================*/
 
 /* 1. 基準点の設定 */
@@ -1699,49 +1978,27 @@ max-width: none;
   justify-content: center;
   align-items: center;
   margin: 0; 
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
-/* レスポンシブ調整の例 */
-@media (max-width: 768px) {
-  .bubble {
-    width: 30%;
-  }
-  .bubble-top-right {
-    top: 20%;
-    right: 5%;
-  }
-  .bubble-bottom-left {
-    bottom: 20%;
-    left: 2%;
-  }
-  .bubble-text {
-    font-size: 10px;
-  }
-}
 /*==================================================
   RING作品の吹き出しレイアウト
 ==================================================*/
 
-/* 1. 基準点の設定 (ドーナツ作品と共通) */
-/* .ring_img_third と .speech-bubble-container の基本設定は流用 */
-
-/* 2. 個別の吹き出しテキストの位置調整 */
-
 /* 左上の吹き出しテキスト */
 .bubble-top-left-ring {
   position: absolute;
-  top: 36%; 
-  left: 1%;  
+  top: 38%; 
+  left: 4%;  
   width: 15%; 
 }
 
 /* 右上の吹き出しテキスト */
 .bubble-top-right-ring {
   position: absolute;
-  top: 13%;  
-  right: 9%; 
+  top: 12%;  
+  right: 7%; 
   width: 20%;
 }
 
@@ -1749,7 +2006,7 @@ max-width: none;
 .bubble-bottom-center-ring {
   position: absolute;
   bottom: 6%; 
-  right: 31%;  
+  right: 32%;  
   width: 15%;
 }
 
@@ -1760,8 +2017,46 @@ max-width: none;
 }
 
 
+/*==================================================
+  10.アニメーション 
+==================================================*/
+
+ /* フェードイン */
+.fadein {
+    opacity: 0;
+    transform: translate(0,0);
+    transition: all 1.5s;
+  &.fadein-left{
+      transform: translate(-30px,0);
+  }
+  &.fadein-right{
+      transform: translate(30px,0);
+  }
+  &.fadein-up{
+      transform: translate(0,-30px);
+  }
+  &.fadein-bottom{
+      transform: translate(0,30px);
+  }
+  &.scrollin{
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
+}
+
+/*==================================================
+  レスポンシブ
+==================================================*/
+
 /* レスポンシブ調整の例 */
 @media (max-width: 768px) {
+.about_line_2{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
   .bubble-top-left-ring {
     top: 25%;
     left: 2%;
@@ -1777,12 +2072,63 @@ max-width: none;
     right: 15%;
     width: 20%;
   }
+
+  /* レスポンシブ調整の例 */
+  .bubble {
+    width: 30%;
+  }
+  .bubble-top-right {
+    top: 20%;
+    right: 5%;
+  }
+  .bubble-bottom-left {
+    bottom: 20%;
+    left: 2%;
+  }
+  .bubble-text {
+    font-size: 10px;
+  }
+/* workの中のTOP */
+  .ringsaite_about_line{
+  display: flex;
+  flex-direction: column; 
 }
 
 
-@media only screen and (max-width: 1200px) {}
+.design-specifications {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;    
+    width: 100%;
+  }
 
-@media only screen and (max-width: 768px) {}
+  /* 各ブロックの幅を調整 */
+  .design-concept-block {
+    width: 90%;          
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  }
 
-@media only screen and (max-width: 360px) {}
+  /* ラベルとテキストの親要素 */
+  .label-box-oya {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  /* 箇条書きリストの左の余白を消して中央へ */
+  .persona-list {
+    text-align: left;      
+    padding-left: 0;       
+    list-style-position: inside; 
+    max-width: 320px;       
+    margin: 0 auto;        
+  }
+}
+
+
 

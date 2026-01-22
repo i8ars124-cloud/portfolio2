@@ -3,111 +3,176 @@
 <head>
 <meta charset="utf-8">
 <title>タイトル</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Micro+5&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 <!--jQuery本体-->
-   <script src="js/jquery-1.11.2.min.js"></script><!-- 必ず上に -->
-     <script src="js/t.js-master/t.min.js"></script>
-    
-<!--ready関数-->
-<script>
-$(function(){
+  <!--TOP動き-->
+  <script src="../js/jquery-1.11.2.min.js"></script><!-- 必ず上に -->
+  <script src="../js/t.js-master/t.min.js"></script>
 
-});
-</script>
+  <!--ハンバーガーメニュー-->
+  <link href="../js/js/drawer-master/dist/css/drawer.css" rel="stylesheet">
+  <script src="../js/js/drawer-master/dist/js/drawer.min.js">
+  </script>
 
-<script type="text/javascript">
-$(function(){
-    $('#Ttext').t({
-        speed:60,//60ミリ秒
-        speed_vary:true,//人間のようなタイピング動作にする
-        blink_perm:false,//常に点滅しない(終了時のみ)
+  <!--ready関数-->
+  <script>
+    $(function () {
+
     });
-});
-</script>
- 
+  </script>
+  <!--TOP動き関数-->
+  <script type="text/javascript">
+    $(function () {
+      $('#Ttext').t({
+        speed: 60,//60ミリ秒
+        speed_vary: true,//人間のようなタイピング動作にする
+        blink_perm: false,//常に点滅しない(終了時のみ)
+      });
+    });
+  </script>
+  <!--ハンバーガーメニュ関数ー-->
+  <script>
+    $(function () {
+      $('.drawer').drawer();
+    });
+  </script>
+
+  <!--iscroll-->
+<script src="../js/js/iscroll-master/build/iscroll.js"></script>
+
+
 
 </head>
 
 <body>
-<header>
-    <h1 class="side">takaya</h1>
-        <div class="top">
-        <img src="img/TOP.png" alt="ピンクのフロッピーディスク"/>
-       <div class="side2">
-         <main>
-   <section>
-    <h1  p id="Ttext">takaya<br>
-        portfolio　of<br>
-        2025</h1>
-    <!--<p id="Ttext">こんなふうにタイピングされたようなアニメーションが実装できるプラグインです</p>-->
-    </section>
-</main>
-        
+
+<div class="work_ring_backgroundcolor">
+   <section class="ringsite_top">
+    <div class="ringsaite_about_line">
+    <div class="ringsaite_about_line_inner">
+          <h2 class="outline-title">BTXPOP制作</h2>
+        <div class="tag-container">
+          <span class="detail-tag tag-kikaku">企画</span>
+          <span class="detail-tag tag-design">デザイン</span>
         </div>
+        <div class="work_text">
+          <div class="kikaku"><p>企画：1h</p></div>
+          <div class="kikaku"><p>制作：5h</p></div>
+          <div class="kikaku"><p>ページ数：1P</p></div>
         </div>
-        
-       
+      </div>
+      <div class="ring_img">
+        <img src="../img/work_pop_btximg.png" width="400px" height="400px" alt="パソコンにリングサイトが掲載されている">
+      </div> 
+    </div> 
+  </section>
+</div>
 
 
-            <P>abaut</P>
-            <P>work</P> 
-</header>
-
-<!--workー-->
-<section class="top_work">
-  <img src="img/section_folder1.png" width="500px" height="400"  alt="ピンクのフォルダー"/>  
-  <img src="img/section_folder2.png"  width="500px" height="400" alt="ピンクのフォルダー"/>  
-</section>
-
-<!--about-->
-<section class="top_abaut">
-    <div class="about_line">
-        <div class="abaut_in_line">
-        <h1><p>takaya</p></h1>
+<section class="ringsaite_about_line">
+  <div class="design-specifications">
+    <div class="design-concept-block-ps">
+      <div class="label-box-oya">
+        <div class="label-box"><p>デザインコンセプト</p></div>
+        <p class="concept-text">BTX注射を気になっている方への院内POP</p>
+      </div>
+      <div class="persona-top">
+        <div class="label-box-oya">
+          <div class="label-box"><p>ペルソナ</p></div>
+          <p>38歳 女性 会社員（管理職）</p>
         </div>
-            <div calss="about_line_2">
-            <table class="about_box">
-             <tr>
-                <td class="about_birthday_1">生年月日</td>
-                <td class="about_birthday_2">1992.04.10</td> 
-            </tr>
-            <tr>
-                 <td class="about_birthday_1">住所</td>
-                 <td class="about_birthday_2">〒888-8888<br>東京都渋谷区代官山3丁目8-8　TAビル8F </td>
-            </tr>
-                <tr>
-                <td class="about_birthday_1">Tel</td>
-                <td class="about_birthday_2">0120-888-8888</td>
-            </tr>
-            <tr>
-                <td class="about_birthday_1">Email</td>
-                <td class="about_birthday_2">info@kyuenclinic.com</td>  
-             </tr>
-            </table>
-                <div class="about_img_main">
-                <img src="img/about_1.png" width="" height="" alt="私の写真">
-                </div>
-                <div class="abaut_in_line_2">
-               <a link href="#"> <h1><p>viewmore</p></h1></a>
-                </div>
-            </div>
+        <div class="label-box-oya">
+          <ul class="persona-list">
+          <li>人前に立つ機会が多く、表情による小皺が気になり始めている。</li>
+          <li>美容医療には興味があるが「やりすぎ感」は出したくない。自然で、かつ信頼できる医師に任せたい。</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!--underー-->
-<section class="under">
-     <div class="under_line">
-        <div class="under_img">
-        <img src="img/footer.png" width="560px" height="528px" alt="パソコン画像">
-        </div>
-     </div>
+<section class="ringsite_third">
+  <div class="ringsaite_about_line">
+    <div class="design_text">
+       <div class="label-box"><p>デザインについて</p></div>
+        <p>「お悩みに寄り添う、専門性と清潔感」を表現。落ち着いた<br>
+          ブルーグレーを背景に、繊細な点線を用いることで、医療機関と<br>
+          しての緻密さと安心感を視覚化しました。過度な装飾を省いた<br>
+          ミニマルな構成により、小皺に対する解決策をスマートに提示し<br>
+          ています。
+        </p>
+    </div>
+    <div class="pallet_box_out">
+      <div class="pallet_box">
+        <div class="color main_blue_pb"></div>
+        <p>main:#abc7d5</p>
+      </div>
+      <div class="pallet_box">
+        <div class="color base_white"></div>
+        <p>base:#ffffff</p>
+      </div>
+      <div class="pallet_box">
+      
+        <div class="color accent_grey_pb"></div>
+        <p>accent:#454444</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ringsite_third">
+  <div class="ringsaite_about_line">
+    <div class="graphic_ring_img"><img src="../img/work_pop_btximg.png"   alt="パソコンにリングサイトが掲載されている">
+    </div>
+  </div>
+</section>
+
+<!--
+<section class="ringsite_third">
+  <div class="ringsaite_about_line">
+    <div class="ring_img_third">
+    <div class="ring_img"><img src="../img/work_ring_1_1.png"width="250px" height="700px" alt="パソコンにリングサイトが掲載されている">
+    </div>
+    </div>
+    <div class="ring_img_explanation">
+    <div class="ring_img"><img src="../img/work_ring_1_2.png"width="400px" height="400px" alt="パソコンにリングサイトが掲載されている">
+    </div>
+    <div class="ringsite_third_explanation">
+    <p>リングサイトより、見たいリングを押すと<br>リング詳細サイトのページを開くようになっております。<br>また、詳細ページにサイズの選択・お気に入りの<br>ボタンが押せるように設定しております。</p>
+    </div>
+    </div>
+  </div>
 
 </section>
+
+
+<section class="ringsite_third">
+  <div class="ringsaite_about_line">
+    <div class="ring_img_third">
+    <div class="ring_img"><img src="../img/work_ring_2_1.png"width="250px" height="600px" alt="パソコンにリングサイトが掲載されている">
+    </div>
+    </div>
+    <div class="ring_img_explanation">
+    <div class="ring_img"><img src="../img/work_ring_2_2.png"width="400px" height="400px" alt="パソコンにリングサイトが掲載されている">
+    </div>
+    <div class="ringsite_third_explanation">
+     <p>コンバージョンを予約ページとし、TOPページと下部に<br>予約のボタンを作成しました。<br>インスタグラムや雑誌などの外部より HP に予約のために<br>開いた方や、HP を見て予約をしたい方に合わせて2箇所<br>作成しております。</p>
+    </div>
+    </div>
+  </div>
+
+</section>-->
+
+
+<div class="universaldesign">
+<p>©︎2025takaya</p>
+</div>
 
 <!--ハンバーガーメニュー-->
   <body class="drawer drawer--left">
@@ -129,15 +194,12 @@ $(function(){
   <main role="main">
     <!-- Page content -->
   </main>
-  <div class="flower">
-  </div>
-  </body>
-
-
-<div class="universaldesign">
-<p>©︎2025takaya</p>
+<div class="flower">
 </div>
-   
+</body>
+
+ 
+</div>
 </body>
 
 </html>

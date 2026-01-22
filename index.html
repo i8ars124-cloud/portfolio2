@@ -44,6 +44,20 @@
       $('.drawer').drawer();
     });
   </script>
+ <!--フェードインー-->
+   <script>
+    $(window).scroll(function (){
+	$('.fadein').each(function(){
+		var elemPos = $(this).offset().top,
+		scroll = $(window).scrollTop(),
+		windowHeight = $(window).height();
+
+			if (scroll > elemPos - windowHeight + 150){
+				$(this).addClass('scrollin');
+			}
+	});
+});
+</script>
 
   
 
@@ -63,8 +77,8 @@
         <main>
           <section class="top-ugoki">
             <h1  id="Ttext" class="top_text">takaya<br>
-              portfolio　of<br>
-              2025</h1>
+              portfolio of<br>
+              2026</h1>
             <!--<p id="Ttext">こんなふうにタイピングされたようなアニメーションが実装できるプラグインです</p>-->
           </section>
         </main>
@@ -76,13 +90,13 @@
 
   <!--workー-->
   <div class="block block-two">
-  <h1>------works------</h1>
-  <section class="top_work">
+    <section class="top_work">
+    <h1>------works------</h1>
     <div class="section_work_website">
        <a href="work/index.html"><img src="img/section_folder1.png" width="500px" height="400" alt="ピンクのフォルダー" /></a>
     </div>
     <div class="section_work_graphic">
-      <a href="work/index.html"><img src="img/section_folder2.png" width="500px" height="400" alt="ピンクのフォルダー" /></a>
+      <a href="work/index.html#graphic" ><img src="img/section_folder2.png" width="500px" height="400" alt="ピンクのフォルダー" /></a>
     </div>
   </section>
   </div>
