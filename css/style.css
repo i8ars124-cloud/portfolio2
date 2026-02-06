@@ -2472,5 +2472,15 @@ html, body {
         width: 95% !;
         padding: 5px ; 
     }
+
+    
 }
 
+
+.ring_img img, 
+.sauna-img img, 
+.graphic_ring_img img {
+    width: 100% !important;    
+    height: auto !important;    
+    max-width: 800px !important; 
+}
