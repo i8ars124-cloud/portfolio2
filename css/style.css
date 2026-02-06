@@ -2305,21 +2305,19 @@ width: 250px;
 }
 
 .web_1 {
-        flex-direction: column;   /* 縦に並べる魔法の呪文！ */
-        align-items: center;      /* 縦に並べたあと、真ん中に寄せる */
-        gap: 20px;                /* 上下の隙間を調整 */
+        flex-direction: column;  
+        align-items: center;      
+        gap: 20px;               
     }
-
-    /* 2. 画像が画面からはみ出さないように調整 */
+    
     .web_ring_img img {
-        width: 100% !important;   /* 画面の幅に合わせて画像を縮める */
-        height: auto !important;  /* 高さは自動で調整して歪ませない */
-        max-width: 350px;         /* 大きくなりすぎないようにストッパー */
+        width: 100% ;
+        height: auto;  
+        max-width: 350px;         
     }
 
-    /* 3. 枠自体の幅も調整 */
     .web_ring {
-        width: 90% !important;    /* 画面の9割くらいの幅にする */
+        width: 90% ;   
     }
 
 
@@ -2358,36 +2356,47 @@ html, body {
 
 
 .abaut_in_line {
-        width: 70% !important;    
-        padding: 10px !important;
-        margin: 10px auto !important;
-        border-radius: 30px !important;
+        width: 70% ;    
+        padding: 10px ;
+        margin: 10px auto ;
+        border-radius: 30p;
     }
 
     
     .abaut_in_line h1 {
-        font-size: 1.2rem !important; 
-        display: block !important;
-        white-space: nowrap !important; 
+        font-size: 1.2re; 
+        display: block;
+        white-space: nowrap; 
     }
 
     /* 自己紹介のカード（白い大きな枠）：幅を画面いっぱいに広げる */
     .about_box, .card, .profile_card { 
-        width: 92% !important;       
-        padding: 15px !important;    
-        margin: 0 auto !important;   
-        box-sizing: border-box !important;
+        width: 92%;       
+        padding: 15px;    
+        margin: 0 auto;   
+        box-sizing: border-boxt;
     }
 
     /* 自己紹介の文字：枠からはみ出さないように自動で改行させる */
     .about_box p, .profile_card p, dd, dt {
-        font-size: 0.85rem !important; 
-     line-height: 1.6 !important;   
-     word-break: break-all !important;  
-        overflow-wrap: break-word !important;
+        font-size: 0.85rem ; 
+     line-height: 1.6 ;   
+     word-break: break-all ;  
+        overflow-wrap: break-word;
     }
   
 }
+@media screen and (max-width: 480px) {
+   
+    dl, dt, dd, table, tr, td {
+        display: block; 
+        width: 100% ;
+        box-sizing: border-box;
+    }
 
+    .about_box, .profile_card {
+        overflow: hidden ; 
+    }
+}
 
 
