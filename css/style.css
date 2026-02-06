@@ -2387,7 +2387,22 @@ html, body {
   
 }
 @media screen and (max-width: 480px) {
-   
+  html {
+        -webkit-text-size-adjust: 100%;
+    }
+
+    .about_box p, .profile_card p, dd, dt, td, span {
+        word-break: break-all !important; 
+        overflow-wrap: break-word !important;
+    }
+
+  
+    .about_box, .profile_card {
+        width: 94% !important; 
+        padding: 15px 10px !important; 
+    } 
+
+
     dl, dt, dd, table, tr, td {
         display: block; 
         width: 100% ;
