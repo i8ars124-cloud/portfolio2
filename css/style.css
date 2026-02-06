@@ -1396,6 +1396,7 @@ body{
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
+  gap:1%;
 }
 
 /* タイトル、タグ、PC画像のラッパー */
@@ -2529,4 +2530,6 @@ html, body {
     justify-content: center;
 }
 
-
+.web_ring_img img,.graphic_ring_img img{
+border-radius: 40px;
+}
