@@ -20,6 +20,14 @@ img{
 }
 
 /*共通文字*/
+
+html, body {
+        overflow-x: hidden; 
+        width: 100vw; 
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
 body{
   color: #2d2b2b;
 }
@@ -163,6 +171,7 @@ a:visited {text-decoration: none;color:#e2b9cc;}
     background-color:#f6f1e6;
     width: 30vh; 
 }
+
 .abaut_in_line_2{
     padding: 3% 0;
     border-radius: 50px;
@@ -2250,6 +2259,7 @@ width: 250px;
 
 /* レスポンシブ調整の例 */
 @media (max-width: 768px) {
+
 .about_line_2{
     display: flex;
     flex-direction: column; 
@@ -2294,6 +2304,24 @@ width: 250px;
   flex-direction: column; 
 }
 
+.web_1 {
+        flex-direction: column;   /* 縦に並べる魔法の呪文！ */
+        align-items: center;      /* 縦に並べたあと、真ん中に寄せる */
+        gap: 20px;                /* 上下の隙間を調整 */
+    }
+
+    /* 2. 画像が画面からはみ出さないように調整 */
+    .web_ring_img img {
+        width: 100% !important;   /* 画面の幅に合わせて画像を縮める */
+        height: auto !important;  /* 高さは自動で調整して歪ませない */
+        max-width: 350px;         /* 大きくなりすぎないようにストッパー */
+    }
+
+    /* 3. 枠自体の幅も調整 */
+    .web_ring {
+        width: 90% !important;    /* 画面の9割くらいの幅にする */
+    }
+
 
 .design-specifications {
     display: flex;
@@ -2311,9 +2339,6 @@ width: 250px;
     align-items: center;    
   }
 
- 
-  
-
   /* 箇条書きリストの左の余白を消して中央へ */
   .persona-list {
     text-align: left;      
@@ -2322,6 +2347,46 @@ width: 250px;
     max-width: 320px;       
     margin: 0 auto;        
   }
+
+html, body {
+        overflow-x: hidden; 
+        width: 100vw; 
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+
+.abaut_in_line {
+        width: 70% !important;    
+        padding: 10px !important;
+        margin: 10px auto !important;
+        border-radius: 30px !important;
+    }
+
+    
+    .abaut_in_line h1 {
+        font-size: 1.2rem !important; 
+        display: block !important;
+        white-space: nowrap !important; 
+    }
+
+    /* 自己紹介のカード（白い大きな枠）：幅を画面いっぱいに広げる */
+    .about_box, .card, .profile_card { 
+        width: 92% !important;       
+        padding: 15px !important;    
+        margin: 0 auto !important;   
+        box-sizing: border-box !important;
+    }
+
+    /* 自己紹介の文字：枠からはみ出さないように自動で改行させる */
+    .about_box p, .profile_card p, dd, dt {
+        font-size: 0.85rem !important; 
+     line-height: 1.6 !important;   
+     word-break: break-all !important;  
+        overflow-wrap: break-word !important;
+    }
+  
 }
 
 
