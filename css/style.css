@@ -1867,9 +1867,8 @@ margin: 0;
 }
 
 /* PC画像 (work_ring.png) */
-
 .ring_img.sns img{
-width: 250px;
+width: 150px;
 }
 
 .ring_img, .sauna-img {
@@ -1879,12 +1878,56 @@ width: 250px;
     width: 400px; 
 }
 
-.ring_img img, .sauna-img img {
+ .sauna-img img {
     width: 100%;       
     max-width: 450px;  
     height: auto;      
     object-fit: contain; 
 }
+
+.ring_img {
+        width: 800px ; 
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+.ring_img img {
+        width: 100% ; 
+        max-width: none ; 
+        height: auto ;
+    }
+
+.ring_img_third {
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .ringsaite_about_line {
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        gap: 50px;              
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .ringsaite_about_line_inner {
+        flex: 0 1 auto;        
+        text-align: left;        
+    }
+
+    .ring_img.sns {
+        flex: 0 1 auto;
+        width: auto ;
+    }
+
+    .ring_img.sns img {
+        width: 280px ; 
+        height: auto;
+    }
+
 
 /*==============================================================
   7.ハンバーガーメニュー (drawer.js) のカスタマイズ - アニメーション強化版
@@ -2191,6 +2234,7 @@ width: 250px;
   height: auto;
 }
 
+
 /*==================================================
   RING作品の吹き出しレイアウト
 ==================================================*/
@@ -2320,6 +2364,7 @@ width: 250px;
         width: 90% ;   
     }
 
+    
 
 .design-specifications {
     display: flex;
@@ -2410,6 +2455,22 @@ html, body {
     .about_box, .profile_card {
         overflow: hidden ; 
     }
-}
 
+.web_ring_img, .c-bnr5, .c-bnr1 {
+        width: 100% ;
+        padding: 0 ;
+        margin: 0 auto ;
+    }
+
+    .web_ring_img img {
+        width: 100% ; 
+        height: auto ;
+        display: block ;
+    }
+
+    .web_ring {
+        width: 95% !;
+        padding: 5px ; 
+    }
+}
 
