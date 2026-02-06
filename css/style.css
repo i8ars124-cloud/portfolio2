@@ -2391,17 +2391,15 @@ html, body {
         -webkit-text-size-adjust: 100%;
     }
 
-    .about_box p, .profile_card p, dd, dt, td, span {
-        word-break: break-all !important; 
-        overflow-wrap: break-word !important;
+    .persona-list.about_box p, .profile_card p, dd, dt, td, span {
+        word-break: break-all ; 
+        overflow-wrap: break-word ;
     }
 
-  
     .about_box, .profile_card {
-        width: 94% !important; 
-        padding: 15px 10px !important; 
+        width: 94% ; 
+        padding: 15px 10px; 
     } 
-
 
     dl, dt, dd, table, tr, td {
         display: block; 
