@@ -155,7 +155,7 @@ a:visited {text-decoration: none;color:#e2b9cc;}
 }
 .about_birthday_1{
     font-weight: bold;
-    width: 35%;
+    /* width: 35%; */
 }
 .about_line{
     padding: 5% 5%;
@@ -1887,11 +1887,11 @@ width: 150px;
 }
 
 .ring_img {
-        width: 800px ; 
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
+    max-width: 800px ; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
 
 .ring_img img {
         width: 100% ; 
@@ -2398,17 +2398,17 @@ width: 150px;
 
     .about_img_main img {
         width: 100%;
-        max-width: 150px; /* イラストも少し小ぶりに */
+        max-width: 150px;
         height: auto;
     }
 
     /* 3. ピンクのファイル（背景）側：幅を絞って文字をセンターに */
     .about_main .about_img_sub {
-        flex: 0 0 60%; /* 全体の60%の幅を確保 */
+        flex: 0 0 60%; 
         margin-left: 0;
         /* 背景画像を80%の大きさにし、中央に配置 */
         background-image: url("../img/about_2.png");
-        background-size: 85% auto; /* ★ここで画像自体の大きさを調整 */
+        background-size: 85% auto; 
         background-repeat: no-repeat;
         background-position: center top;
         
@@ -2507,11 +2507,11 @@ html, body {
     /* 1. 外枠：絶対に横並び(row)を解除しない */
     .about_main {
         display: flex;
-        flex-direction: row; /* 横並び死守！ */
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 100%;
-        gap: 2%; /* 隙間を％にして柔軟に */
+        gap: 2%; 
         padding: 0 10px;
         box-sizing: border-box;
     }
@@ -2519,7 +2519,7 @@ html, body {
     /* 2. 人物画像：画面の3割くらいの幅に固定 */
     .about_img_main {
         flex: 0 0 30%; 
-        max-width: 120px; /* 小さくなってもこれ以上大きくしない */
+        max-width:50%;
     }
 
     .about_img_main img {
@@ -2554,7 +2554,7 @@ html, body {
 
     /* 5. 文章：フォルダからはみ出さない魔法 */
     .about_img_sub .description-text p {
-        font-size: 10px; /* 文字サイズをギュッと絞る */
+        font-size: 10px;
         line-height: 1.4;
         margin: 0;
         width: 100%;
@@ -2564,84 +2564,6 @@ html, body {
         white-space: normal;
     }
 }
-
-    /* スキル */
-    .about_skill {
-        width: 100% ;
-        padding: 20px 0;
-    }
-  
-  @media screen and (max-width: 480px) {
-    /* 1. 全体を包む箱をグリッド（網目）にする */
-    .about_skill {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* 2. 行（about_skill_1など）の枠をなくして、中身を直接グリッドで並べる */
-    /* PCでは「行」として機能し、スマホでは「中身をバラす」設定 */
-    .about_skill_1, 
-    .about_skill_1_2,
-    .about_skill_1_3 {
-        display: contents; /* これで「行」の区切りがスマホだけ消えるよ */
-    }
-
-    /* 3. アイコンとドットをセットにするための共通設定 */
-    /* 順番を自由に決めるための魔法 */
-    .about_skill {
-        display: grid;
-        grid-template-columns: 1fr; /* 1列に並べる */
-        gap: 20px;
-        justify-items: center;
-    }
-
-    /* 4. それぞれのスキルの順番を指定（ここが大事！） */
-    /* 1行目の中身 */
-    .about_skill_1 div:nth-child(1), .about_skill_1 .circle-container:nth-of-type(1) { order: 1; } /* Ai */
-    .about_skill_1 div:nth-child(2), .about_skill_1 .circle-container:nth-of-type(2) { order: 4; } /* VSコード */
-    .about_skill_1 div:nth-child(3), .about_skill_1 .circle-container:nth-of-type(3) { order: 7; } /* HTML */
-
-    /* 2行目の中身 */
-    .about_skill_1_2 div:nth-child(1), .about_skill_1_2 .circle-container:nth-of-type(1) { order: 2; } /* Ps */
-    .about_skill_1_2 div:nth-child(2), .about_skill_1_2 .circle-container:nth-of-type(2) { order: 5; } /* Figma */
-    .about_skill_1_2 div:nth-child(3), .about_skill_1_2 .circle-container:nth-of-type(3) { order: 8; } /* CSS */
-
-    /* 3行目の中身 */
-    .about_skill_1_3 div:nth-child(1), .about_skill_1_3 .circle-container:nth-of-type(1) { order: 3; } /* Id */
-    .about_skill_1_3 div:nth-child(2), .about_skill_1_3 .circle-container:nth-of-type(2) { order: 6; } /* JS */
-
-    /* アイコンとドットを横並びにする共通設定 */
-    .about_skill div[display="inline-flex"], 
-    .circle-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-.about_skill_1, .about_skill_1_2, .about_skill_1_3 {
-        display: contents;
-    }
-
-    /* 全体を縦並びのグリッドにする */
-    .about_skill {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 20px;
-    }
-
-    /* ★ここで好きな順番に並べる（PCの列の順！） */
-    .skill-item:nth-of-type(1) { order: 1; } /* Ai */
-    .skill-item:nth-of-type(4) { order: 2; } /* Ps */
-    .skill-item:nth-of-type(7) { order: 3; } /* Id */
-    .skill-item:nth-of-type(2) { order: 4; } /* VS */
-    .skill-item:nth-of-type(5) { order: 5; } /* Figma */
-    .skill-item:nth-of-type(8) { order: 6; } /* JS */
-    .skill-item:nth-of-type(3) { order: 7; } /* HTML */
-    .skill-item:nth-of-type(6) { order: 8; } /* CSS */
-}
-
 
   
 @media screen and (max-width: 480px) {
@@ -2718,13 +2640,13 @@ html, body {
 
     /* 2. プロフィール画像を適切なサイズにする */
     .about_img_main {
-        width: 150px !important; /* イラストを少し小さく */
-        margin: 0 auto !important; /* 中央に寄せる */
+        width: 150px !important; 
+        margin: 0 auto !important; 
     }
 
     /* 3. プロフィールのテキストボックス */
     .description-text p {
-        margin: 10px 20px !important; /* 左右に余白を作る */
+        margin: 10px 20px !important;
         text-align: left !important;
         font-size: 14px !important;
         line-height: 1.8 !important;
@@ -2733,7 +2655,7 @@ html, body {
     /* 4. Skillの丸（ドット）がはみ出さないように調整 */
     .circle-container {
         display: flex;
-        flex-wrap: wrap !important; /* 折り返して表示 */
+        flex-wrap: wrap !important; 
         justify-content: center !important;
         gap: 5px !important;
         width: 100% !important;
@@ -2741,7 +2663,7 @@ html, body {
     }
 
     .circle, .circle_sub {
-        width: 15px !important; /* スマホでは丸を少し小さく */
+        width: 15px !important; 
         height: 15px !important;
     }
 
@@ -2788,7 +2710,7 @@ html, body {
   .graphic_ring_img img {
     width: 100%;   
     height: auto ;
-    max-width: 800px;
+    max-width: 400px;
     }
 
 /* 1. 全体のはみ出しをリセット */
