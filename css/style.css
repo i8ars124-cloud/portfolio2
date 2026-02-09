@@ -2478,6 +2478,29 @@ html, body {
         padding: 5px ; 
     }
 
+    /* top workの画像 */
+
+    .section_work_website, 
+    .section_work_graphic {
+        width: 50% ; 
+        margin: 0 auto 20px ;
+        background-color: transparent ; 
+    }
+
+    .section_work_website img, 
+    .section_work_graphic img {
+        width: 50%; 
+        height: auto; 
+    }
+
+    /* aboutの枠調整 */
+    .about_line {
+    padding: 5% 5%;
+    border-radius: 50px;
+    width: 45%;
+}
+
+
 /* workの画像調整 */
     .web_1, .web_ring, .web_ring_img, .work_backgroundcolor {
         width: 100%;
@@ -2495,6 +2518,7 @@ html, body {
         margin-bottom: 20px;
         overflow: hidden;
     }
+    
 
   ;
     [class*="c-bnr"] {
