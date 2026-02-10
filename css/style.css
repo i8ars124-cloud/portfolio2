@@ -2710,7 +2710,7 @@ html, body {
   .graphic_ring_img img {
     width: 100%;   
     height: auto ;
-    max-width: 400px;
+    max-width: 300px;
     }
 
 /* 1. 全体のはみ出しをリセット */
