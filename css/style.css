@@ -1675,35 +1675,35 @@ body{
 /* 文房具パレットカラー */
 .main_green_st{
 border: 1px solid #000;
-  background:#558f57;
+background:#558f57;
 }
 
 .base_orange_st{
-  border: 1px solid #000;
-  background:#dfae9c;
+border: 1px solid #000;
+background:#dfae9c;
 }
 
 /* リップパレットカラー */
 .main_terracotta_lip{
 border: 1px solid #000;
-  background:#c56464;
+background:#c56464;
 }
 
 .accent_gold_lip{
-  border: 1px solid #000;
-  background:#e1c7a8;
+border: 1px solid #000;
+background:#e1c7a8;
 }
 
 /* クリニック10thキャンペーン */
 
-.main_beige_10ht{
+.main_beige_10th{
 border: 1px solid #000;
-  background:#ead0bb;
+background:#ead0bb;
 }
 
-.accent_lightblue_10ht{
-  border: 1px solid #000;
-  background:#9cc8e1;
+.accent_lightblue_10th{
+border: 1px solid #000;
+background:#9cc8e1;
 }
 
 /*==================================================
